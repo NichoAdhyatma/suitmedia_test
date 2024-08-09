@@ -16,8 +16,8 @@ class MyApp extends StatelessWidget {
       title: 'Suitmedia Test App',
       theme: AppTheme.theme,
       getPages: routes,
+      debugShowCheckedModeBanner: false,
       initialRoute: Routes.screen1,
     );
   }
 }
-
