@@ -16,6 +16,7 @@ class AppTheme {
       );
 
   static final theme = ThemeData(
+    scaffoldBackgroundColor: AppPallete.whiteColor,
     textTheme: GoogleFonts.poppinsTextTheme(),
     elevatedButtonTheme: ElevatedButtonThemeData(
       style: ButtonStyle(
@@ -23,7 +24,7 @@ class AppTheme {
           const Size(double.infinity, 48),
         ),
         padding: WidgetStateProperty.all(
-          const EdgeInsets.symmetric(vertical: 10),
+          const EdgeInsets.symmetric(vertical: 6),
         ),
         backgroundColor: WidgetStateProperty.all(AppPallete.primaryColor),
         shape: WidgetStateProperty.all(

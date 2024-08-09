@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:suitmedia_msib/core/theme/app_theme.dart';
-import 'package:suitmedia_msib/features/screen_1/screen_1.dart';
+import 'package:get/get.dart';
+import 'package:suitmedia_msib/core/themes/app_theme.dart';
+import 'package:suitmedia_msib/routes/routes.dart';
 
 void main() {
   runApp(const MyApp());
@@ -9,13 +10,13 @@ void main() {
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
-  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'Flutter Demo',
+    return GetMaterialApp(
+      title: 'Suitmedia Test App',
       theme: AppTheme.theme,
-      home: const Screen1(),
+      getPages: routes,
+      initialRoute: Routes.screen1,
     );
   }
 }
