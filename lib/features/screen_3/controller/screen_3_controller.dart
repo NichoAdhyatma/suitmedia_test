@@ -22,7 +22,7 @@ class Screen3Controller extends GetxController {
 
     final result = await userDatasource.getUser(
       page: currentPage,
-      perPage: 7,
+      perPage: 10,
     );
 
     result.fold(
